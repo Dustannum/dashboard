@@ -98,8 +98,7 @@ def create_rfm_df(df):
     return rfm_df
 
 # Import Data
-file_path = '../dashboard/all_data.csv'
-all_df = pd.read_csv(file_path)
+all_df = pd.read_csv("all_data.csv")
 
 # Sort DataFrame by order_approved_at
 datetime_columns = ["shipping_limit_date", "order_purchase_timestamp", "order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date"]
